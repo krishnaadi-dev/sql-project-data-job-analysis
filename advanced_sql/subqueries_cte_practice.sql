@@ -25,3 +25,25 @@ JOIN (
 -- company. A company is considered 'Small' if it has less than 10 job postings, 'Medium' if the
 -- number of job postings is between 10 and 50, and 'Large' if it has more than 50 job postings.
 -- Implement a subquery to aggregate job counts per company before classifying them based on size.
+
+SELECT
+    cd.name AS company_name,
+    CASE
+        WHEN job_count < 10 THEN 'Small'
+        WHEN job_count BETWEEN 10 AND 50 THEN 'Medium'
+        ELSE 'Large'
+    END AS company_size_category
+FROM
+    company_dim AS cd
+JOIN (
+    SELECT
+        company_id,
+        COUNT(*) AS job_count
+    FROM
+        job_postings_fact     
+    GROUP BY
+        company_id
+) AS job_counts
+    ON cd.company_id = job_counts.company_id
+ORDER BY
+    company_size_category DESC;         
