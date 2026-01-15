@@ -110,7 +110,7 @@ data querying, transformation, and basic analysis.
 ```text
 .
 ├── 📁 advance_sql/                 # Advance courses and practices
-    └── 📁 practice_advance_sql/ 
+│   └── 📁 practice_advance_sql/ 
 ├── 📁 assets/                      # Query documentations
 ├── 📁 sql_load/                    # DDL & DML 
 ├── 📄 .gitignore        
