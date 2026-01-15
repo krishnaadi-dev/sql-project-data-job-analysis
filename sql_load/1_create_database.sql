@@ -1,3 +1,2 @@
+-- Initial step: create a database for importing external CSV data
 CREATE DATABASE sql_course;
-
--- DROP DATABASE IF EXISTS sql_course;

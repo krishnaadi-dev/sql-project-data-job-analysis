@@ -34,9 +34,9 @@ FROM
 LIMIT 10;
 
 -- Example query using EXTRACT to count the number of job postings per month for 'Data Analyst' positions.
-SELECT
-    COUNT(job_id) AS job_count,
-    EXTRACT(MONTH FROM job_posted_date) AS date_month
+SELECT  
+    EXTRACT(MONTH FROM job_posted_date) AS date_month,
+    COUNT(job_id) AS job_count
 FROM
     job_postings_fact
 WHERE
@@ -44,6 +44,6 @@ WHERE
 GROUP BY
     date_month
 ORDER BY
-    job_count DESC;
+    date_month ASC;
 
 
