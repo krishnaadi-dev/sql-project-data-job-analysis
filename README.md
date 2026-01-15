@@ -31,6 +31,7 @@ data querying, transformation, and basic analysis.
 
 ## 🔍 Sample of Cases
 1. [Case 1](./advanced_sql/practice_advanced_sql/1_dates_practice.sql)
+    
     Find companies that posted health-insured job openings during Q2 2023 using date extraction and aggregation.
 
     ```sql
@@ -57,6 +58,7 @@ data querying, transformation, and basic analysis.
 
 
 2. [Case 2](./advanced_sql/practice_advanced_sql/2_cases_practice.sql) 
+    
     Categorize Data Analyst salaries into low, medium, and high ranges to identify high-value job postings.
 
     ```sql
@@ -80,6 +82,7 @@ data querying, transformation, and basic analysis.
 
 
 3. [Case 3](./advanced_sql/practice_advanced_sql/3_subqueries_practice.sql) 
+    
     Identify the top 5 most in-demand skills based on job postings. Use a subquery to count skill frequency and join with skills metadata
 
     ```sql
