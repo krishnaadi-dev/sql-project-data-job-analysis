@@ -120,4 +120,4 @@ data querying, transformation, and basic analysis.
 ## ⚠️ Disclaimer
 This project is part of my SQL learning process and is intended for educational and portfolio purposes only.
 
-This repository reflects my learning progression in SQL and is continuously updated as I explore more advanced analytical techniques.
+This repository reflects my learning progression in SQL and is *continuously updated* as I explore more advanced analytical techniques.
