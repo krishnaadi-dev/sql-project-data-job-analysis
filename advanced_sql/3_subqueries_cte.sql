@@ -32,13 +32,15 @@ WHERE company_id IN (
 );
 
 -- example of CTE
+-- Find companies that have the most job openings
 WITH company_job_count AS (
-SELECT
-    company_id,
-    COUNT(*) as total_job
-FROM job_postings_fact
-GROUP BY
-    company_id
+    SELECT
+        company_id,
+        COUNT(*) as total_job
+    FROM 
+        job_postings_fact
+    GROUP BY
+        company_id
 )
 SELECT
     cd.name AS company_name,
